@@ -17,6 +17,7 @@ import type {
   ToolStreamUpdateEvent,
   AgentResultEvent,
 } from '../hooks/events.js'
+import type { A2AStreamUpdateEvent } from '../a2a/events.js'
 import type { z } from 'zod'
 import { AgentMetrics } from '../telemetry/meter.js'
 
@@ -139,3 +140,4 @@ export type AgentStreamEvent =
   | AfterToolCallEvent
   | MessageAddedEvent
   | AgentResultEvent
+  | A2AStreamUpdateEvent
